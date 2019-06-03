@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/> <!--For devices-->
+  
+  <title>A Books</title>
+  <link rel="icon" type="image/ico" href="Imagenes/logo.ico" />
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/fontawesome-all.css" rel="stylesheet" />
+  <link href="css/materialize-social.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/font-awesome.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+ 
+</head>
+
+<body>
+  <!--NAV-->
+
+  <nav  class="nav-extended teal lighten-5" role="navigation">
+        <div class="nav-wrapper  blue-grey darken-4"  >
+          <a class="sidenav-trigger" data-target="mobile-demo"><i class="material-icons">menu</i></a>  
+          
+          <img id="logo" class="responsive-img" src="Imagenes/IMG_0746.png" alt="" >   
+           
+          <a class="sidenav-trigger right" data-target="mobile-demo1"><i class="material-icons">account_circle</i></a>
+          <ul role="menu" id="nav-mobile" class="right hide-on-med-and-down">
+            <li role="none" tabindex="-1" role="tab" class="tab" aria-selected="true">
+              <form role="search" name="form1" method="post" action="">
+                <div class="wrapper">       
+                  <div class="input-field">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                  </div>
+                </div>
+              </form>
+            </li>
+            <li role="none" tabindex="-1" role="tab" class="tab" aria-selected="true">
+              <button id="inicio" class="btn modal-trigger hide" href="#Iniciar_Sesion" role="button" aria-pressed="false" role="menuitem">Identifícate</button>
+            </li> 
+            <li role="none" tabindex="-1" role="tab" class="tab" aria-selected="true">
+              <button id="btnLogOut" class="btn btn-action hide" role="button" aria-pressed="false" role="menuitem">Log Out</button> 
+            </li>              
+          </ul>
+        </div>
+    
+        <div class="nav-content " id="navdos">
+            <ul role="none" id="nav-mobile" class="left hide-on-med-and-down">  
+              <li role="presentation" tabindex="-1" role="tab" aria-selected="true" class="tab"><a class='dropdown-trigger btn' href='index.html' data-target='dropdown3'> Inicio </a></li>
+              <li role="presentation" tabindex="-1" role="tab" class="tab"><a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Libros</a></li> 
+              <li role="presentation" tabindex="-1" role="tab" class="tab"><a class='dropdown-trigger btn' href='#' data-target='dropdown2'> Categorías </a></li>
+              <li role="presentation" tabindex="-1" role="tab"  class="tab"><a class='dropdown-trigger btn' href='contacto.html' data-target='dropdown4'> Contacto </a></li>
+            </ul>
+    
+            <ul id='dropdown3' class='dropdown-content'> 
+            </ul>
+    
+            <ul id='dropdown4' class='dropdown-content'> 
+              </ul>
+    
+            <ul id='dropdown1' class='dropdown-content'>
+                <div class="row">
+                <div class="col s12">
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="audiobooks.html">Audiolibros</a></li>
+                </div>
+            </ul>
+    
+            <ul id='dropdown2' class='dropdown-content'>
+              <div class="row">
+              <div class="col s6">
+              <ul>
+                <li><a href="aventuras.html"><i aria-hidden="true" class="tiny material-icons">flight</i> Aventuras</a></li>
+                <li><a href="biografias.html"><i aria-hidden="true" class="tiny material-icons">person</i> Biografías y memorias</a></li>
+                <li><a href="Ciencia_ficcion.html"><i aria-hidden="true" class="tiny material-icons">brightness_2</i> Ciencia ficción y fantasía</a></li>
+                <li><a href="Comic.html"><i aria-hidden="true" class="tiny material-icons">description</i> Cómics y novelas gráficas</a></li>
+                <li><a href="educacion.html"><i aria-hidden="true" class="tiny material-icons">book</i> Educación</a></li>
+              </ul>
+              </div>
+              <div class="col s6">
+              <ul>
+                <li><a href="Infantil.html"><i aria-hidden="true" class="tiny material-icons">child_care</i> Infantil</a></li>
+                <li><a href="informatica.html"><i aria-hidden="true" class="tiny material-icons">computer</i> Informática e Internet</a></li>
+                <li><a href="juvenil.html"><i aria-hidden="true" class="tiny material-icons">supervisor_account</i> Juvenil</a></li>
+                <li><a href="misterio.html"><i aria-hidden="true" class="tiny material-icons">smoking_rooms</i> Misterio y Suspense</a></li>
+                <li><a href="Romance.html"><i aria-hidden="true" class="tiny material-icons">favorite</i> Romance</a></li>
+              </ul>
+              </div>
+            </ul>
+        </div>
+      </nav> 
+      
+    
+    
+    
+    
+    
+      <!--movil-->
+      <ul class="sidenav" id="mobile-demo">
+            <li role="presentation" tabindex="0" role="tab" aria-selected="true" class="tab"><a class="active" href="index.html"> Inicio </a></li>
+            <li tabindex="0"><a href="novedades.html">Novedades</a></li>
+            <li tabindex="0"><a href="audiobooks.html">Audiolibros</a></li>
+            <li role="presentation" tabindex="-1" role="tab" class="tab"><a href="#"> Categorías </a></li>
+            <li><a href="aventuras.html"><i aria-hidden="true" class="tiny material-icons">flight</i> Aventuras</a></li>
+            <li><a href="biografias.html"><i aria-hidden="true" class="tiny material-icons">person</i> Biografías y memorias</a></li>
+            <li><a href="Ciencia_ficcion.html"><i aria-hidden="true" class="tiny material-icons">brightness_2</i> Ciencia ficción y fantasía</a></li>
+            <li><a href="Comic.html"><i aria-hidden="true" class="tiny material-icons">description</i> Cómics y novelas gráficas</a></li>
+            <li><a href="educacion.html"><i aria-hidden="true" class="tiny material-icons">book</i> Educación</a></li>
+            <li><a href="Infantil.html"><i aria-hidden="true" class="tiny material-icons">child_care</i> Infantil</a></li>
+            <li><a href="informatica.html"><i aria-hidden="true" class="tiny material-icons">computer</i> Informática e Internet</a></li>
+            <li><a href="juvenil.html"><i aria-hidden="true" class="tiny material-icons">supervisor_account</i> Juvenil</a></li>
+            <li><a href="misterio.html"><i aria-hidden="true" class="tiny material-icons">smoking_rooms</i> Misterio y Suspense</a></li>
+            <li><a href="Romance.html"><i aria-hidden="true" class="tiny material-icons">favorite</i> Romance</a></li>
+            <li role="presentation" tabindex="-1" role="tab"  class="tab"><a href='contacto.html'> Contacto </a></li>
+          </ul>
+    
+        <ul class="sidenav" id="mobile-demo1">
+                <li role="none" role="tab" class="tab"><button id="inicio" class="waves-effect waves-light btn modal-trigger" href="#Iniciar_Sesion" role="button" aria-pressed="false" role="menuitem">Identifícate</button></li> 
+                
+                             
+        </ul>
+        <div role="dialog" id="Iniciar_Sesion" class="modal">
+                <div id="pag4" tabindex="0">Autentificación</div>
+                <div role="form" aria-labelledby="iniciar">
+                <div class="w3l-form-group">
+                    
+                <label>Correo electrónico:</label>
+                <div class="group">
+                <i class="material-icons">email</i>
+                <input id="txtEmail" type="email" placeholder="Email" role="alert" aria-live="assertive" aria-required="true">
+                </div>
+                </div>
+          
+                <div class="w3l-form-group">
+                <label>Contraseña:</label>
+                <div class="group">
+                <i class="fas fa-unlock"></i>
+                <input id="txtPassword" type="password" placeholder="Password" role="alert" aria-live="assertive" aria-required="true">
+                </div>
+                </div>
+                
+                <div class="row">
+                <div class="col s12 m6 l6">
+                <button id="btnLogin" class="btn btn-action">Log in</button>
+              </div>
+              <div class="col s12 m6 l6">
+                <button id="btnSignUp" class="btn btn-secondary">Sign up</button>
+              </div>
+          
+              <button class="material-icons modal-action modal-close"role="button" aria-pressed="false">close</button>
+              </div>
+                
+            
+                
+            </div>
+            </div> 
+<!--Modal Download-->
+  <div id="Downloading" class="modal" role="dialog">
+        <p tabindex="0">Descargado con Éxito</p>
+        <button class="material-icons modal-action modal-close"role="button" aria-pressed="false">close</button>
+    </div>
+<!--Contenido principal de la pagina-->
+<div role="main">
+    <div class="row">
+        <div class="col s12 m12 l10 offset-l1">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img class="responsive-img" src="Imagenes/infantil.jpg">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content center">
+                            <div id="pag2" tabindex="0">Infantil</div>
+                            <div id="sus2" tabindex="0">Encuentra y descarga los mejores libros Infantiles.</div>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+    <div class="row center-cols center-align">
+        <div class="col s12 m4 l3">
+            <div class="container">
+            <div class="card">
+                <div class="card-image">
+                    <img class="responsive-img" src="Imagenes/tarzan.jpg" >
+                    
+                    <a class="btn-floating halfway-fab waves-effect modal-trigger waves-light red" href="#Downloading" role="button" aria-pressed="false"><i aria-hidden="true" class="material-icons">file_download</i> Botón para Descargar libro. Título: 20th Century Boys</a>
+                </div>
+                <div class="card-content">
+                    <span tabindex="0" class="card-title">Tarzan</span>
+                    <p tabindex="0"> <strong>Autor:</strong>
+                        Disney
+                        </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+        <div class="col s12 m4 l3">
+                <div class="container">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="responsive-img" src="Imagenes/leon.jpg" >
+                        
+                        <a class="btn-floating halfway-fab waves-effect modal-trigger waves-light red" href="#Downloading" role="button" aria-pressed="false"><i aria-hidden="true" class="material-icons">file_download</i>Botón para Descargar libro. Título: Psycho Pass nº 06/06</a>
+                    </div>
+                    <div class="card-content">
+                        <span tabindex="0" class="card-title">El Rey León</span>
+                        <p tabindex="0"><strong>Autora:</strong>
+                            Disney</p>
+                    </div>
+                </div>
+                </div>
+        </div>
+            
+        <div class="col s12 m4 l3">
+                <div class="container">
+            <div class="card">
+                <div class="card-image">
+                    <img class="responsive-img" src="Imagenes/sirenita.png" >
+                            
+                    <a class="btn-floating halfway-fab waves-effect modal-trigger waves-light red" href="#Downloading" role="button" aria-pressed="false"><i aria-hidden="true" class="material-icons">file_download</i>Botón para Descargar libro. Título: Hisohiso - Susurros</a>
+                </div>
+                <div class="card-content">
+                    <span tabindex="0" class="card-title">La Sirenita </span>
+                    <p tabindex="0"><strong>Autor:</strong>
+                        Disney</p>
+                </div>
+            </div>
+            </div>
+        </div>
+            
+            <div class="col s12 m4 l3">
+                    <div class="container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="responsive-img" src="Imagenes/toy.jpg" >
+                            
+                            <a class="btn-floating halfway-fab waves-effect modal-trigger waves-light red" href="#Downloading" role="button" aria-pressed="false"><i aria-hidden="true" class="material-icons">file_download</i>Botón para Descargar libro. Título:En la oscuridad</a>
+                        </div>
+                        <div class="card-content">
+                            <span tabindex="0" class="card-title">Toy Story 3</span>
+                            <p tabindex="0"><strong>Autores:</strong>
+                                Disney y Pixar </p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+
+            <div class="col s12 m4 l3">
+                <div class="container">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="responsive-img" src="Imagenes/frozen.jpg" >
+                        
+                        <a class="btn-floating halfway-fab waves-effect modal-trigger waves-light red" href="#Downloading" role="button" aria-pressed="false"><i aria-hidden="true" class="material-icons">file_download</i>Botón para Descargar libro. Título: De:Tales</a>
+                    </div>
+                    <div class="card-content">
+                        <span tabindex="0" class="card-title">Frozen</span>
+                        <p tabindex="0"><strong>Autor:</strong> 
+                            Disney</p>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <div class="col s12 m4 l3">
+            <div class="container">
+            <div class="card">
+                <div class="card-image">
+                    <img class="responsive-img" src="Imagenes/brave.jpg" >
+                    
+                    <a class="btn-floating halfway-fab waves-effect modal-trigger waves-light red" href="#Downloading" role="button" aria-pressed="false"><i aria-hidden="true" class="material-icons">file_download</i> Botón para Descargar libro. Título: El jardín de las palabras </a>
+                </div>
+                <div class="card-content">
+                    <span tabindex="0" class="card-title">Brave </span>
+                    <p tabindex="0"><strong>Autores:</strong> 
+                        Disney y Pixar</p>
+                </div>
+            </div>
+            </div>
+    </div>
+        
+    <div class="col s12 m4 l3">
+            <div class="container">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="responsive-img" src="Imagenes/coco.jpg" >
+                        
+                        <a class="btn-floating halfway-fab waves-effect modal-trigger waves-light red" href="#Downloading" role="button" aria-pressed="false"><i aria-hidden="true" class="material-icons">file_download</i>Botón para Descargar libro. Título:  Y sin embargo te quiero</a>
+                    </div>
+                    <div class="card-content">
+                        <span tabindex="0" class="card-title">Coco</span>
+                        <p tabindex="0"><strong>Autores:</strong>
+                            Disney y Pixar</p>
+                    </div>
+                </div>
+                </div>
+    </div>
+
+    <div class="col s12 m4 l3">
+        <div class="container">
+        <div class="card">
+            <div class="card-image">
+                <img class="responsive-img" src="Imagenes/aladdin2.jpg" >
+                
+                <a class="btn-floating halfway-fab waves-effect modal-trigger waves-light red" href="#Downloading" role="button" aria-pressed="false"><i aria-hidden="true" class="material-icons">file_download</i>Botón para Descargar libro. Título: Moonshine nº 01</a>
+            </div>
+            <div class="card-content">
+                <span tabindex="0" class="card-title">Aladdin</span>
+                <p tabindex="0"><strong>Autor:</strong>
+                    Disney</p>
+            </div>
+            </div>
+        </div>
+</div>
+
+<div class="col s12 m4 l3">
+        <div class="container">
+            <div class="card">
+                <div class="card-image">
+                    <img class="responsive-img" src="Imagenes/zoo.jpg" >
+                    
+                    <a class="btn-floating halfway-fab waves-effect modal-trigger waves-light red" href="#Downloading" role="button" aria-pressed="false"><i aria-hidden="true" class="material-icons">file_download</i>Botón para Descargar libro. Título: La flor del nuevo Mundo</a>
+                </div>
+                <div class="card-content">
+                    <span tabindex="0" class="card-title">Zootrópolis</span>
+                    <p tabindex="0"><strong>Autor:</strong>
+                        Disney </p>
+                </div>
+            </div>
+            </div>
+</div>
+
+<div class="col s12 m4 l3">
+    <div class="container">
+    <div class="card">
+        <div class="card-image">
+            <img class="responsive-img" src="Imagenes/increibles.jpg" >
+            
+            <a class="btn-floating halfway-fab waves-effect modal-trigger waves-light red" href="#Downloading" role="button" aria-pressed="false"><i aria-hidden="true" class="material-icons">file_download</i>Botón para Descargar libro. Título: Gunnm Alita Mars Chronicle</a>
+        </div>
+        <div class="card-content">
+            <span tabindex="0" class="card-title">Los increíbles 2</span>
+            <p tabindex="0"><strong>Autores:</strong>
+                Disney y Pixar </p>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="col s12 m4 l3">
+    <div class="container">
+<div class="card">
+    <div class="card-image">
+        <img class="responsive-img" src="Imagenes/monstruos.jpg" >
+                
+        <a class="btn-floating halfway-fab waves-effect modal-trigger waves-light red" href="#Downloading" role="button" aria-pressed="false"><i aria-hidden="true" class="material-icons">file_download</i>Botón para Descargar libro. Título: Un ruido extraño y hermoso</a>
+    </div>
+    <div class="card-content">
+        <span tabindex="0" class="card-title">Monstruos, S.A.</span>
+        <p tabindex="0"><strong>Autores:</strong>
+            Disney y Pixar</p>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="col s12 m4 l3">
+    <div class="container">
+    <div class="card">
+        <div class="card-image">
+            <img class="responsive-img" src="Imagenes/nemo.jpg" >
+            
+            <a class="btn-floating halfway-fab waves-effect modal-trigger waves-light red" href="#Downloading" role="button" aria-pressed="false"><i aria-hidden="true" class="material-icons">file_download</i>Botón para Descargar libro. Título: American Gods Sombras</a>
+        </div>
+        <div class="card-content">
+            <span tabindex="0" class="card-title">Buscando a Nemo</span>
+            <p tabindex="0"><strong>Autores:</strong>
+                Disney y Pixar
+                </p>
+        </div>
+    </div>
+    </div>
+</div>
+
+        </div>
+</div>
+
+
+
+
+ <!--FOOTER-->
+
+ <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+          <div class="row">
+              <div class="col l4 s6">
+                  <h5 tabindex="0" class="white-text">Contacta con nosotros</h5>
+                  <ul role="none">
+                    <li tabindex="0"><p>Teléfono: +34 822 46 72 30</p></li>
+                    <li tabindex="0"><p>Correo: abooks@gmail.com</p></li>
+                  </ul>
+                </div>
+            <div class="col l4  s12">
+              <h5 tabindex="0" class="white-text">Sobre nosotros</h5>
+              <p tabindex="0" class="grey-text text-lighten-4">A Books publica a diario un importante abanico de los mejores libros</p>
+            </div>
+            <div class="col l4  s6">
+              <h5 tabindex="0" aria-level="5" class="white-text">Síguenos en</h5>
+              <ul role="none">
+                  <div class="col s2"><li><a class="waves-effect waves-light btn-floating social facebook"><i tabindex="0" aria-label="facebook" class="fa fa-facebook"></i></a> </li></div>
+                  <div class="col s2"><li><a class="waves-effect waves-light btn-floating social instagram"><i tabindex="0" aria-label="instagram" class="fa fa-instagram"></i></a></li></div>
+                  <div class="col s2"><li><a class="waves-effect waves-light btn-floating social twitter"><i tabindex="0" aria-label="twitter" class="fa fa-twitter"></i></a></li></div>
+                  <div class="col s2"><li><a class="waves-effect waves-light btn-floating social tumblr"><i tabindex="0" aria-label="tumblr" class="fa fa-tumblr"></i></a></li></div>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div tabindex="0" class="container">
+            Copyright © 2019 ABOOKS. Todos los derechos reservados
+          </div>
+        </div>
+    </footer>
+
+<!--JavaScript-->
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script src="js/materialize.js"></script>
+  
+  <script src="js/app.js"></script>
+  <script src="js/init.js"></script> 
+
+
+  
+  
+
+</body>
+</html>
